@@ -52,6 +52,8 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+        printBoard.printBoard(boardEasy);
 	// write your code here
     }
 }
