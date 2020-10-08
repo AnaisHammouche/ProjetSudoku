@@ -1,7 +1,7 @@
 package com.company;
 
 public class is_valid_column {
-
+    //j'appelle la fonction is_valid_column(
     static boolean is_valid_column(int[][] tab, int column) {
 
         for (int num = 1; num < 10; num++) {
