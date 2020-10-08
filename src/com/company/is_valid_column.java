@@ -1,8 +1,12 @@
 package com.company;
 
 public class is_valid_column {
-    //j'appelle la fonction is_valid_column(
-    static boolean is_valid_column(int[][] tab, int column) {
+    /**
+     * La fonction permet de vérifier si la colonne est valide
+     * @param tab de type int à 2 dimensions
+     * @param column de type int
+     * @return False si un chiffre est en double et True si rien n'est en double
+     */    static boolean is_valid_column(int[][] tab, int column) {
 
         for (int num = 1; num < 10; num++) {
             int counter = 0;
@@ -18,7 +22,11 @@ public class is_valid_column {
         return true;
     }
 
-
+    /**
+     * La fonction permet de vérifier si toutes les colonnes sont valides
+     * @param tab de type int à 2 dimensions
+     * @return False si un chiffre est en double et True si rien n'est en double
+     */
     static boolean is_valid_all_column(int[][] tab) {
         for (int column = 0; column < 9; column++) {
             if (is_valid_column(tab, column) == false) {
