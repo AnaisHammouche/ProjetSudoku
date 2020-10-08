@@ -52,9 +52,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-
-        //isValidSection.isValidSection(boardEasy);
-        System.out.println(allSectionValid.travelAllSection(boardEasy));
-	// write your code here
+        // write your code here
     }
 }

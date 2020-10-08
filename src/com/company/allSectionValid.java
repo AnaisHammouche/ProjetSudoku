@@ -15,9 +15,9 @@ public class allSectionValid {
             int recurrence = 0;
             for (int x = raw; x < raw+3; x++) {
                 for (int y = col; y < col+3; y++) {
-                    System.out.print(board[x][y]);
-                    System.out.println();
-                    System.out.println("NUM ----   " + nb);
+                    //System.out.print(board[x][y]);
+                    //System.out.println();
+                    //System.out.println("NUM ----   " + nb);
                     if (nb == board[x][y]) {
                         recurrence++;
                     }
@@ -25,7 +25,7 @@ public class allSectionValid {
                         return false;
                     }
                 }
-                System.out.println();
+                //System.out.println();
             }
         }
         return true;
