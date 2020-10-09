@@ -52,6 +52,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        isGridValid.isWholeGridValid(boardEasy);
         // write your code here
     }
 }
