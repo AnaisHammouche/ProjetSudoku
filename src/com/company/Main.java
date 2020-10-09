@@ -52,16 +52,22 @@ public class Main {
 
 
     public static void main(String[] args) {
+        // Permet de stoker l'heure actuel de la machine en ms
         long start = System.currentTimeMillis();
+        // Appel la fonction PrintBoard pour afficher la grille non résolu
         printBoard.printBoard(boardEasy);
+        // Appel la fonction FindSolution pour essayer de résoudre la grille
         findSolution.findTheSolution(boardEasy);
+        // Permet de stocker l'heure actuel de la machine en ms
         long end = System.currentTimeMillis();
+        // Soustraction de Start et End pour avoir le temps d'execution du programme
         long finalTime = (end - start);
         System.out.println();
         System.out.println("====================================");
         System.out.println();
         printBoard.printBoard(boardEasy);
         System.out.println();
+        // Affichage de la variable Counter pour avoir le nombre de coup jouer
         System.out.println("La complexité est de : " + findSolution.counter);
         System.out.println("Le temps d'execution est de : " + finalTime + " Millisecondes");
     }

@@ -5,8 +5,8 @@ public class allSectionValid {
     /**
      * La fonction permet de vérifier une section de 3par3 si un chiffre n'est pas en double dans une seule section
      * @param board initialise un tableau à 2 dimensions
-     * @param raw initialiser l'index de la colonne de départ pour la vérification
-     * @param col initialise l'index de la valeur de départ pour la vérification
+     * @param raw initialiser l'index de la ligne de départ pour la vérification
+     * @param col initialise l'index de la valeur de départ pour la vérification de la colonne
      * @return False si un chiffre est en double et True si rien n'est en double
      */
 
