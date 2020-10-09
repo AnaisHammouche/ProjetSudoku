@@ -52,7 +52,17 @@ public class Main {
 
 
     public static void main(String[] args) {
-        isGridValid.isWholeGridValid(boardEasy);
-        // write your code here
+        long start = System.currentTimeMillis();
+        printBoard.printBoard(boardEasy);
+        findSolution.findTheSolution(boardEasy);
+        long end = System.currentTimeMillis();
+        long finalTime = (end - start);
+        System.out.println();
+        System.out.println("====================================");
+        System.out.println();
+        printBoard.printBoard(boardEasy);
+        System.out.println();
+        System.out.println("La complexité est de : " + findSolution.counter);
+        System.out.println("Le temps d'execution est de : " + finalTime + " Millisecondes");
     }
 }
